@@ -3,6 +3,7 @@
 import MainLayout from './layouts/MainLayout';
 import ShopItemFunc from './components/ShopItemFunc';
 import ShopItemClass from './components/ShopItemClass';
+import Calendar from './components/Calendar';
 import HeaderLayout from './layouts/HeaderLayout';
 
 
@@ -25,11 +26,13 @@ const helloProps = { name: "user" };
 
 
 const App = () => {
+    const date = new Date();
     return (
         <>
             {/*<HeaderLayout component={Hello} componentProps={helloProps} /> */}
             <MainLayout component={ShopItemFunc} componentProps={ShopItemProps} />
             <MainLayout component={ShopItemClass} componentProps={ShopItemProps} />
+            <Calendar date={date} />
         </>
     );
 }
