@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import { Months, DaysOfWeek } from './const';
 
-import styles from './main.css';
+import './main.css';
 
 const MonthCalendar = ({ date }) => {
     let moment = require('moment');
@@ -18,6 +18,7 @@ const MonthCalendar = ({ date }) => {
     //console.log("lastdate=" + endOfMonth.format())
 
     let prevs = new Array();
+    let afters = new Array();
     let days = [];
     // формирование массива дней предыдущего месяца с начала недели
     // структура элемента массива:
@@ -37,6 +38,18 @@ const MonthCalendar = ({ date }) => {
     }
     // переворачиваем массив предыдущих дней
     prevs = prevs.reverse();
+
+    // формируем хвостик в следующем месяце до конца недели
+    for (let i = 0; i < 7 - endOfMonth.day(); i++) {
+        // создание копии объекта moment плюс i дней
+        let newDate = new moment(endOfMonth).add(i + 1, "day");
+        afters.push({
+            dayOfMonth: newDate.date(),
+            dayOfWeek: newDate.day(),
+            status: 'prev'
+        });
+
+    }
 
     // формирование массива дней текущего месяца
     // структура элемента массива:
@@ -70,7 +83,9 @@ const MonthCalendar = ({ date }) => {
             curWeek = [];
         }
     });
-    // добавляем остаток в массив недель
+    // добавляем остаток из нового месяца 
+    curWeek = curWeek.concat(afters);
+    // добавляем неделю в массив недель
     weeks.push(curWeek);
     //console.log(weeks);
 
@@ -99,15 +114,17 @@ const MonthCalendar = ({ date }) => {
                 </thead>
                 <tbody>
                     {weeks && weeks.map((v, key) => (
-                        <tr>
+                        <tr key={`week_tr_${key}`}>
                             {v.map((v2, key2) => (
-                                v2.status === 'prev' ? (
-                                    <td className="ui-datepicker-other-month" key={`td_${key2}`}>{v2.dayOfMonth}</td>
-                                ) : v2.status === 'now' ? (
-                                    <td className="ui-datepicker-today" key={`td_${key2}`}>{v2.dayOfMonth}</td>
-                                ) : (
-                                    <td>{v2.dayOfMonth}</td>
-                                )
+                                <td
+                                    className={
+                                    v2.status === 'prev' ? 'ui-datepicker-other-month'
+                                  : v2.status === 'now' ?  'ui-datepicker-today'
+                                 : ''}
+                                    key={`td_${key2}`}
+                                >
+                                    {v2.dayOfMonth}
+                                </td>
                             ))}
                         </tr>
                     ))}

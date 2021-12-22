@@ -3,7 +3,7 @@
 import CurrentDay from './CurrentDay';
 import MonthCalendar from './MonthCalendar';
 
-import styles from './main.css';
+import './main.css';
 
 
 

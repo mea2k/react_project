@@ -1,0 +1,14 @@
+.backgroundDark {
+  background: darkGray;
+  margin-right:14px;
+}
+
+.backgroundLight {
+    background: lightGray;
+    margin-right: 14px;
+}
+
+td.backgroundDark,
+td.backgroundLight {
+    cursor: pointer;
+}

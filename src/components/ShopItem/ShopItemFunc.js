@@ -1,4 +1,7 @@
-﻿const ShopItemFunc = ({
+﻿import PropTypes from 'prop-types'
+
+
+const ShopItemFunc = ({
     brand,          // название производителя товара,
     title,          // название товара,
     description,    // краткое описание товара,
@@ -29,6 +32,26 @@
 
 
     )
+};
+
+
+
+ShopItemFunc.propTypes = {
+    brand: PropTypes.string,            // название производителя товара,
+    title: PropTypes.string.isRequired, // название товара,
+    description: PropTypes.string,      // краткое описание товара,
+    descriptionFull: PropTypes.string,  // подробное описание товара,
+    price: PropTypes.number.isRequired, // цена товара,
+    currency: PropTypes.string          // валюта товара.
+};
+
+ShopItemFunc.defaultProps = {
+    brand: '',
+    title: '',
+    description: '',
+    descriptionFull: '',
+    price: 0,
+    currency: 'р'
 };
 
 

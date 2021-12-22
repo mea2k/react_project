@@ -2,7 +2,7 @@
 
 import { Months, DaysOfWeek } from './const';
 
-import styles from './main.css';
+import './main.css';
 
 
 const CurrentDay = ({ date }) => {
