@@ -5,7 +5,7 @@ import { ViewModes } from './const';
 const IconSwitch = ({ icon, onSwitch }) => {
 
     return (
-        <div className="items" onClick={(e) => onSwitch(e.currentTarget.textContent)} >
+        <div className="icon-switch" onClick={(e) => onSwitch(e.currentTarget.textContent)} >
             {icon}
          </div>
     );
@@ -18,7 +18,7 @@ IconSwitch.propTypes = {
 };
 
 IconSwitch.defaultProps = {
-    icon: 'view_list'
+    icon: 'view_module'
 };
 
 

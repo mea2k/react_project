@@ -2,16 +2,34 @@
 
 const ProjectCard = ({ name, img, category }) => (
     <div className="card">
-        <div className="card-image waves-effect waves-block waves-light">
-            <img className="activator" src={img} alt={name} />
+        <div className="card-image">
+            <img src={img} alt={name} />
         </div>
         <div className="card-content">
-            <span className="card-title activator grey-text text-darken-4">
+            <span className="card-title">
                 {category}
             </span>
         </div>
     </div>
 );
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ProjectCard.propTypes = {

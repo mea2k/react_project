@@ -7,9 +7,11 @@ import ListView from './ListView';
 
 import { Products, ViewModes } from './const';
 
+import './main.css';
+
 const Store = ({ products }) => {
 
-    const [curIcon, setCurIcon] = useState(0);
+    const [curIcon, setCurIcon] = useState(1);
 
     function changeView() {
         const newVal = (curIcon + 1) % ViewModes.length;
@@ -21,7 +23,7 @@ const Store = ({ products }) => {
         <div>
             <h2> Store </h2>
             <IconSwitch icon={ViewModes[curIcon]} onSwitch={changeView} />
-            {curIcon && ViewModes[curIcon] === 'view_list' ?
+            {ViewModes[curIcon] === 'view_list' ?
                 <ListView items={products} /> :
                 <CardsView cards={products} />
             }

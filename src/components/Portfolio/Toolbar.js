@@ -6,20 +6,16 @@ const Toolbar = ({ filters, selected, handleSelectFilter }) => {
 
     return (
         <div className="items">
-            <table>
-                <tbody>
-                    <tr>
-                        {filters && filters.map((v, key) => (
-                            <td className={v === selected ? 'backgroundDark' : 'backgroundLight'}
-                                onClick={(e) => handleSelectFilter(e.currentTarget.textContent)}
-                                key={`toolbar_${key}`}
-                            >
-                                {v}
-                            </td>
-                        ))}
-                    </tr>
-                </tbody>
-            </table>
+            <ul>
+                {filters && filters.map((v, key) => (
+                    <li className={v === selected ? 'backgroundDark' : 'backgroundLight'}
+                        onClick={(e) => handleSelectFilter(e.currentTarget.textContent)}
+                        key={`toolbar_${key}`}
+                    >
+                        {v}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };

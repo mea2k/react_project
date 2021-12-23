@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-/* Body */
 
-body {
-    background: #F5F5F5;
-    height: 100%;
-    color: rgba(0, 0, 0, 0.87);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+
+.icon-switch {
+    border: 1px solid gray;
+    background: lightGray;
+    cursor: pointer;
+    display: inline;
+    margin: 20px;
+    padding: 2px;
 }
+
+.icon-switch:hover {
+    border: 1px solid gray;
+    background: darkGray;
+}
+
 
 ul {
     list-style: none;
@@ -20,113 +24,100 @@ ul {
     margin: 0;
 }
 
-.container {
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn {
-    outline: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #5380F7;
-    min-width: 260px;
-    border: 0;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    padding: 16px 20px;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.dropdown-wrapper.open .dropdown {
-    transform: translate(0, 20px);
-    opacity: 1;
-    visibility: visible;
-}
-
-.btn .material-icons {
-    border-radius: 100%;
-    animation: ripple 0.6s linear infinite;
-}
-
-.dropdown-wrapper .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #FFFFFF;
+.store-container {
+    margin: 0;
     width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s ease;
 }
 
-.dropdown-wrapper .dropdown:before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.05);
-    border-top: 6px solid #FFFFFF;
-    border-right: 6px solid #FFFFFF;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
-    transform: rotate(-45deg);
-    mix-blend-mode: multiple;
-}
-
-.dropdown-wrapper .dropdown li {
-    z-index: 1;
+.store-card {
+    /* float: left; */
+    /* display: flex; */
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30%;
+    margin: 5px;
     position: relative;
-    background: #FFFFFF;
-    padding: 0 20px;
-    color: #666;
 }
 
-.dropdown-wrapper .dropdown li.active {
-    color: #5380F7;
+.store-card-image {
+    max-width: 300px;
+    box-shadow: 2px 2px 0px 0px lightGray;
 }
 
-.dropdown-wrapper .dropdown li:first-child {
-    border-radius: 4px 4px 0 0;
+.store-card-content-layer {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 1.25em;
+    line-height: 1.25;
+    padding: 5px;
 }
 
-.dropdown-wrapper .dropdown li:last-child {
-    border-radius: 0 0 4px 4px;
+.store-card-title {
+    color: darkSlateGray;
+    font-weight: bold;
 }
 
-.dropdown-wrapper .dropdown li:last-child a {
-    border-bottom: 0;
+.store-card-info {
+    text-align: center;
+    font-size: small;
+    margin-top: 5px;
 }
 
-.dropdown-wrapper .dropdown a {
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 16px 0;
-    color: inherit;
-    font-size: 14px;
-    text-decoration: none;
+.store-card-footer {
+    position: absolute;
+    top: +90%;
+    min-height: 1.25em;
+    line-height: 1.25;
+    padding: 5px;
+    clear: both;
+    color: red;
+    font-weight: bold;
 }
 
-@keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
-    }
-    100% {
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
-    }
+
+/* CSS for LISTVIEW */
+
+.card-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    width: 99%;
+    min-width: 900px;
+    margin: 2px;
+    background: rgb(245,245,245);
+    /* box-shadow: 2px 2px 0px 0px lightGray; */
+}
+
+.card-list-item-image {
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+
+.card-list-item-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    flex-grow: 1; /* дает приоритет на растяжение блока */
+}
+
+.card-list-item-content {
+    flex-grow: 2; /* дает приоритет на растяжение блока */
+    text-align: center;
+    font-size: small;
+    margin-right: 20px;
+}
+
+.card-list-item-price {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
 }

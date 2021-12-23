@@ -4,12 +4,13 @@
     "\\public",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\Calendar",
     "\\src\\components\\Portfolio",
     "\\src\\components\\Store",
     "\\src\\layouts",
     "\\src\\layouts\\header",
     "\\src\\layouts\\main"
   ],
-  "SelectedNode": "\\src\\components\\Store\\const.js",
+  "SelectedNode": "\\src\\components\\Store\\ShopItem.js",
   "PreviewInSolutionExplorer": false
 }

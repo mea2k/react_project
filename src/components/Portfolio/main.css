@@ -1,6 +1,6 @@
 .backgroundDark {
-  background: darkGray;
-  margin-right:14px;
+    background: darkGray;
+    margin-right: 14px;
 }
 
 .backgroundLight {
@@ -8,7 +8,53 @@
     margin-right: 14px;
 }
 
-td.backgroundDark,
-td.backgroundLight {
+.items {
+    margin: 10px;
+}
+
+.items ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.items li {
+    margin-right: 5px;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 6px 6px;
     cursor: pointer;
+    border: 1px solid darkSlateGray;
+}
+
+    .items li:last-child {
+        margin-right: 0;
+    }
+
+    .items .active,
+    .items li:hover {
+        color: #fff;
+        background-color: darkGray;
+    }
+
+
+.cards-container {
+    margin: 0;
+}
+
+.card {
+    float: left;
+    width: 33%;
+}
+
+.card-image {
+    min-height: 100px;
+}
+
+.card-title {
+    color: darkSlateGray;
 }

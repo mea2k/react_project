@@ -2,7 +2,7 @@
 import ShopItem from './ShopItem';
 
 const ListView = ({ items }) => (
-    <div className="container">
+    <div className="store-container">
         <ul>
             {items && items.map((v, key) => (
                 <ShopItem item={v} key={`si_${key}`} />

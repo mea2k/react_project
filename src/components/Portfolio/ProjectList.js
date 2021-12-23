@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import ProjectCard from './ProjectCard';
 
 const ProjectList = ({ projects }) => (
-    <div className="items">
+    <div className="cards-container">
         {projects ? projects.map((v, key) => (
             <ProjectCard key={`pr_${key}`} {...v} />
         )
