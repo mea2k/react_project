@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Calendar from '../../components/Calendar';
+import DropdownMenu from '../../components/DropdownMenu';
 import Home from '../../components/Home';
 import Portfolio from '../../components/Portfolio';
 import ShopItem from '../../components/ShopItem';
@@ -14,6 +15,7 @@ const MainPage = () => (
             <Route path='/calendar' element={<Calendar />} />
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/store' element={<Store />} />
+            <Route path='/dropdown' element={<DropdownMenu />} />
         </Routes>
     </div>
 );

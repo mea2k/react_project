@@ -14,6 +14,7 @@ const MainMenu = () => (
                 <li><NavLink to='/calendar' activeclassname="active">ДЗ 1.2* - Календарь</NavLink></li>
                 <li><NavLink to='/portfolio' activeclassname="active">ДЗ 2.1 - Фильтр (портфолио)</NavLink></li>
                 <li><NavLink to='/store' activeclassname="active">ДЗ 2.2 - Расположение товаров (Store)</NavLink></li>
+                <li><NavLink to='/dropdown' activeclassname="active">ДЗ 2.3* - Список меню</NavLink></li>
            </ul>
         </nav>
     </div>
