@@ -1,24 +1,70 @@
-﻿import { Link, NavLink } from "react-router-dom";
+﻿import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import PropTypes from 'prop-types'
 
-//import './main.css';
+import { Menus } from "./const";
 
-const MainMenu = () => (
-    <div>
-        <div className="logo">
-            <span className="text-red">МЕНЮ</span>
+
+
+
+const MainMenu = ({ menu }) => {
+
+    const [location, setLocation] = useState('');
+
+    return (
+        <div>
+            <div className="logo">
+                <span className="text-red">МЕНЮ</span>
+            </div>
+            <nav className="navbar">
+                <ul className="navbar-topmenu">
+                    {menu.map((v) => (
+                        <li className={v.submenu ? 'navbar-dropdown' : ''} key={v.location} >
+                            <NavLink
+                                to={v.link}
+                                activeclassname="active"
+                                onClick={() => setLocation(v.location)}
+                                className={
+                                    v.submenu && location && v.submenu.reduce((prev, cur) => prev + cur.location, '').includes(location) ?
+                                        'active' :
+                                        ''
+                                }
+                            >
+                                {v.name}
+                            </NavLink>
+                            {v.submenu ?
+                                <ul className="navbar-submenu">
+                                    {v.submenu.map((v2) => (
+                                        <li key={v2.location} >
+                                            <NavLink
+                                                to={v2.link}
+                                                activeclassname="active"
+                                                onClick={() => setLocation(v2.location)}
+                                            >
+                                                {v2.name}
+                                            </NavLink>
+                                        </li>
+                                    ))}
+                                </ul>
+                                : ''}
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+
         </div>
-        <nav className="navbar">
-            <ul>
-                <li><NavLink to='/' activeclassname="active">Главная</NavLink></li>
-                <li><NavLink to='/shop' activeclassname="active">ДЗ 1.1 - Интернет-магазин</NavLink></li>
-                <li><NavLink to='/calendar' activeclassname="active">ДЗ 1.2* - Календарь</NavLink></li>
-                <li><NavLink to='/portfolio' activeclassname="active">ДЗ 2.1 - Фильтр (портфолио)</NavLink></li>
-                <li><NavLink to='/store' activeclassname="active">ДЗ 2.2 - Расположение товаров (Store)</NavLink></li>
-                <li><NavLink to='/dropdown' activeclassname="active">ДЗ 2.3* - Список меню</NavLink></li>
-           </ul>
-        </nav>
-    </div>
-);
+
+    )
+};
+
+MainMenu.propTypes = {
+    menu: PropTypes.array
+};
+
+MainMenu.defaultProps = {
+    menu: Menus
+};
+
 
 
 export default MainMenu;

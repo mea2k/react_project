@@ -12,7 +12,7 @@ const DropdownMenu = ({ items }) => {
     const [selectedItem, setSelectedItem] = useState('');
 
     return (
-        <div className="menu-container">
+        <div className="drop-down">
             <div className={`dropdown-wrapper ${show ? 'open' : ''}`}>
                 <button className="btn" onClick={() => setShow(!show)}>
                     <span>Account Settings</span>

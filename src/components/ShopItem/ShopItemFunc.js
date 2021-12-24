@@ -10,10 +10,10 @@ const ShopItemFunc = ({
     currency        // валюта товара.
 }) => {
     return (
-        <div className="main-content">
-            <h2>{brand}</h2>
-            <h1>{title}</h1>
-            <h3>{description} </h3>
+        <div className="shop-container">
+            <h2 className="shop">{brand}</h2>
+            <h1 className="shop">{title}</h1>
+            <h3 className="shop">{description} </h3>
             <div className="description">
                 {descriptionFull}
             </div>

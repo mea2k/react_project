@@ -15,8 +15,9 @@ const ShopItemProps = {
 const ShopItem = () => {
     return (
         <div>
-            <h1> ShopItemClass </h1>
-            <div className="container">
+            <h1>ShopItemClass</h1>
+            <h3>Компонент ShopItemClass</h3>
+            <div className="shop-layer">
                 <div className="background-element">
                 </div>
                 <div className="highlight-window">
@@ -24,8 +25,9 @@ const ShopItem = () => {
                 </div>
                 <ShopItemClass {...ShopItemProps} />
             </div>
-            <h1> ShopItemFunc </h1>
-            <div className="container">
+            <h1>ShopItemFunc</h1>
+            <h3>Компонент ShopItemFunc</h3>
+            <div className="shop-layer">
                 <div className="background-element">
                 </div>
                 <div className="highlight-window">

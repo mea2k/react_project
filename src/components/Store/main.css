@@ -25,7 +25,7 @@ ul {
 }
 
 .store-container {
-    margin: 0;
+    margin: 10px;
     width: 100%;
 }
 
@@ -87,7 +87,7 @@ ul {
     align-items: center;
     justify-content: stretch;
     flex-wrap: nowrap;
-    width: 99%;
+    width: 98%;
     min-width: 900px;
     margin: 2px;
     background: rgb(245,245,245);

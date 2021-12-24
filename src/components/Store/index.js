@@ -21,7 +21,8 @@ const Store = ({ products }) => {
 
     return (
         <div>
-            <h2> Store </h2>
+            <h1>Store</h1>
+            <h3>Компонент Store</h3>
             <IconSwitch icon={ViewModes[curIcon]} onSwitch={changeView} />
             {ViewModes[curIcon] === 'view_list' ?
                 <ListView items={products} /> :

@@ -27,7 +27,8 @@ const Portfolio = () => {
 
     return (
         <div>
-            <h2> Portfolio </h2>
+            <h1>Portfolio</h1>
+            <h3>Компонент Portfolio</h3>
             <Toolbar
                 filters={Filters}
                 selected={selectedFilter}

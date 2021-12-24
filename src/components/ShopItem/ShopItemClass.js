@@ -11,13 +11,10 @@ class ShopItemClass extends React.Component {
 
     render() {
         return (
-
-
-
-           <div className="main-content">
-                <h2>{this.props.brand}</h2>
-                <h1>{this.props.title}</h1>
-                <h3>{this.props.description} </h3>
+            <div className="shop-container">
+                <h2 className="shop">{this.props.brand}</h2>
+                <h1 className="shop">{this.props.title}</h1>
+                <h3 className="shop">{this.props.description} </h3>
                 <div className="description">
                     {this.props.descriptionFull}
                 </div>
@@ -50,12 +47,12 @@ ShopItemClass.propTypes = {
 };
 
 ShopItemClass.defaultProps = {
-    brand: '',           
-    title: '',         
-    description: '',   
+    brand: '',
+    title: '',
+    description: '',
     descriptionFull: '',
-    price: 0,            
-    currency: 'р'        
+    price: 0,
+    currency: 'р'
 };
 
 
