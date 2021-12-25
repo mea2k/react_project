@@ -6,7 +6,7 @@ import './main.css';
 
 
 const CurrentDay = ({ date }) => {
-    const dayOfWeek = DaysOfWeek[date.getDay() - 1];
+    const dayOfWeek = DaysOfWeek[(date.getDay() + 7 - 1) % 7];
     const day = date.getDate();
     const month = Months[date.getMonth()];
     const year = date.getFullYear();

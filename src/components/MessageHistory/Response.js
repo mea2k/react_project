@@ -1,7 +1,6 @@
 ﻿import PropTypes from 'prop-types'
 
 const Response = ({ from, message }) => {
-    console.log(from.online);
     return (
         <>
             <div className="message-data align-right">

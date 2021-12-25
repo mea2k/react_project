@@ -12,9 +12,9 @@
 const Listing = ({ items }) => {
 
     return (
-            <div class="item-list">
-                {items.map((v) => (
-                    <div className="item-list-item">
+            <div className="item-list">
+            {items.map((v) => (
+                <div className="item-list-item" key={v.listing_id}>
                         <div className="item-image">
                             <a href={v.url} target="_blank">
                                 <img src={v.MainImage?.url_570xN} title={v.title} />
@@ -27,7 +27,7 @@ const Listing = ({ items }) => {
                                     v.price + ' ' + v.currency_code
                             }
                             </p>
-                            <p class={`item-quantity ${v.quantity <= 10 ? 'level-low' :
+                            <p className={`item-quantity ${v.quantity <= 10 ? 'level-low' :
                                 v.quantity <= 20 ? 'level-medium' : 'level-high'}`}>{v.quantity} left</p>
                         </div>
                     </div>
