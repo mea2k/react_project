@@ -9,7 +9,7 @@ import { Menus } from "./const";
 
 const MainMenu = ({ menu }) => {
 
-    const [location, setLocation] = useState('');
+    const [location, setLocation] = useState(window.location.href.split('/').pop());
 
     return (
         <div>
