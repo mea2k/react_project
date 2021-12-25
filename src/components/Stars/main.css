@@ -1,0 +1,10 @@
+﻿
+.stars-container {
+    margin: 20px;
+    width: 100%;
+}
+
+.stars input {
+    width: 100px;
+    margin: 10px;
+}

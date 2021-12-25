@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Calendar from '../../components/Calendar';
 import DropdownMenu from '../../components/DropdownMenu';
 import Home from '../../components/Home';
+import ListingLayout from '../../components/Listing';
 import Portfolio from '../../components/Portfolio';
 import ShopItem from '../../components/ShopItem';
 import StarsLayout from '../../components/Stars';
@@ -22,6 +23,7 @@ const MainPage = () => (
             <Route path='/dropdown' element={<DropdownMenu />} />
             {/* ÄÇ3 - Props */}
             <Route path='/stars' element={<StarsLayout />} />
+            <Route path='/listing' element={<ListingLayout />} />
         </Routes>
     </div>
 );

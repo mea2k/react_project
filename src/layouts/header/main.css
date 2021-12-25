@@ -79,13 +79,15 @@
 
     .navbar-topmenu > li {
         display: inline-block;
+        width: 250px;
         /*position: relative;*/
     }
 
         .navbar-topmenu > li > a {
             height: 70px;
-            line-height: 70px;
-            padding: 0 30px;
+            vertical-align: middle;
+            line-height: 20px;
+            padding: 20px 30px 0 30px;
             font-weight: bold;
             color: #003559;
             text-transform: uppercase;
@@ -97,9 +99,9 @@
 }
 */
 
-.navbar-dropdown {
+/*.navbar-dropdown {
     position: relative;
-}
+}*/
 
     .navbar-dropdown > a:after {
         content: "\25BC";
@@ -111,19 +113,21 @@
 }
 
 .navbar-submenu {
+    border: 1px solid darkGray;
+    border-radius: 6px;
     background: white;
-    margin-top: 10px 5px 5px 0px;
+    margin: 10px 5px 5px 0px;
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     z-index: 10;
-    width: 150px;
     transform: perspective(600px) rotateX(-90deg);
     transform-origin: 0% 0%;
     transition: .2s ease-in-out;
-    display: flex;
-    flex-flow: row nowrap;
     padding: 0;
-    list-style: none;
+/*  list-style: none;
+    display: flex;
+    flex-flow: row nowrap; */
 }
 
 .navbar-topmenu > li:hover .navbar-submenu {
@@ -132,8 +136,9 @@
     transform: perspective(600px) rotateX(0deg);
 }
 
-.navbar-submenu li {
+.navbar-submenu  li a {
     margin: 2px;
+    padding: 5px;
 }
 
 /*.navbar-container {

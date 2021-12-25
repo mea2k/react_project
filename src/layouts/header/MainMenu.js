@@ -29,6 +29,7 @@ const MainMenu = ({ menu }) => {
                                         'active' :
                                         ''
                                 }
+                                style={{ left: Number(v.id) * 250 + 'px' }}
                             >
                                 {v.name}
                             </NavLink>

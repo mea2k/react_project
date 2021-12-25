@@ -1,9 +1,11 @@
 ﻿export const Menus = [
     {
+        id: 1,
         name: 'Главная',
         link: '/',
         location: ''
     }, {
+        id: 2,
         name: 'ДЗ1 - компоненты',
         link: '/shop',
         location: 'shop',
@@ -18,6 +20,7 @@
                 location: 'calendar'
             }],
     }, {
+        id: 3,
         name: 'ДЗ2 - События и состояния',
         link: '/portfolio',
         location: 'portfolio',
@@ -36,6 +39,7 @@
                 location: 'dropdown'
             }]
     }, {
+        id: 4,
         name: 'ДЗ3 - Props',
         link: '/stars',
         location: 'stars',
@@ -45,13 +49,13 @@
                 link: '/stars',
                 location: 'stars'
             }, {
-                name: '3.2 - Список приложений',
-                link: '/applications',
-                location: 'applications'
+                name: '3.2 - Список предложений',
+                link: '/listing',
+                location: 'listing'
             }, {
                 name: '3.3 - История сообщений',
                 link: '/history',
                 location: 'history'
             }]
-   }
+    }
 ];

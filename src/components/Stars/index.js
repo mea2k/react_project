@@ -1,8 +1,8 @@
-﻿import PropTypes from 'prop-types'
-import { useState } from 'react';
-import SelectStars from './SelectStars';
+﻿import { useState } from 'react';
 import Stars from './Stars';
+import SelectStars from './SelectStars';
 
+import './main.css';
 
 const StarsLayout = () => {
 
@@ -13,9 +13,11 @@ const StarsLayout = () => {
         <div>
             <h1>Movie Rating</h1>
             <h3>Component Stars (StarsLayout)</h3>
-            <SelectStars handleSetStars={setStars} />
-            <Stars count={stars}/>
-        </div>
+            <div className="stars-container">
+                <SelectStars handleSetStars={setStars} />
+                <Stars count={stars} />
+            </div>
+        </div >
     )
 };
 

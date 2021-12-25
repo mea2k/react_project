@@ -10,7 +10,7 @@ const SelectStars = ({ handleSetStars }) => {
 
     return (
         <div>
-            <form>
+            <form className="stars">
                 <label htmlFor="starNumber">Число звезд: </label>
                 <input type="number" name="starNumber" onChange={onChangeStarNumber} />
             </form>
