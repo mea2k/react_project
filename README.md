@@ -58,17 +58,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Путь:
 [http://localhost:3000/stars](http://localhost:3000/stars)
 
-### 2.2 - Отображение товаров
+### 3.2 - Список предложений
 Компоненты:
-/src/components/Store
+/src/components/Listing
 
 Путь:
-[http://localhost:3000/store](http://localhost:3000/store)
+[http://localhost:3000/listing](http://localhost:3000/listing)
 
-### 2.3* - Выпадающее меню
+### 3.3* - История сообщений
 Компоненты:
-/src/components/DropdownMenu
+/src/components/MessageHistory
 
 Путь:
-[http://localhost:3000/dropdown](http://localhost:3000/dropdown)
+[http://localhost:3000/chat](http://localhost:3000/chat)
 
