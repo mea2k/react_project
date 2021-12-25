@@ -3,6 +3,7 @@ import Calendar from '../../components/Calendar';
 import DropdownMenu from '../../components/DropdownMenu';
 import Home from '../../components/Home';
 import ListingLayout from '../../components/Listing';
+import MessageHistoryLayout from '../../components/MessageHistory';
 import Portfolio from '../../components/Portfolio';
 import ShopItem from '../../components/ShopItem';
 import StarsLayout from '../../components/Stars';
@@ -24,6 +25,7 @@ const MainPage = () => (
             {/* ÄÇ3 - Props */}
             <Route path='/stars' element={<StarsLayout />} />
             <Route path='/listing' element={<ListingLayout />} />
+            <Route path='/chat' element={<MessageHistoryLayout />} />
         </Routes>
     </div>
 );

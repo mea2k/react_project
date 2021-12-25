@@ -53,9 +53,9 @@
                 link: '/listing',
                 location: 'listing'
             }, {
-                name: '3.3 - История сообщений',
-                link: '/history',
-                location: 'history'
+                name: '3.3* - История сообщений',
+                link: '/chat',
+                location: 'chat'
             }]
     }
 ];
