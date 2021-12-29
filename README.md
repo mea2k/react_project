@@ -72,3 +72,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Путь:
 [http://localhost:3000/chat](http://localhost:3000/chat)
 
+## ДЗ4 - Формы
+
+### 4.1 - Конвертор цвета
+Компоненты:
+/src/components/ColorConverter (ColorConverter)
+
+Путь:
+[http://localhost:3000/colors](http://localhost:3000/colors)
+
+### 4.2 - Учет тренировок
+Компоненты:
+/src/components/Training (Training, TrainingForm, TrainingTable)
+
+Путь:
+[http://localhost:3000/training](http://localhost:3000/training)
+
+### 4.3* - Менеджер фото
+TODO soon...
+
