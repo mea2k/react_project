@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\ColorConverter",
+    "\\src\\components\\Listing",
+    "\\src\\components\\Store",
+    "\\src\\components\\Training",
     "\\src\\layouts",
     "\\src\\layouts\\header",
     "\\src\\layouts\\main"
   ],
-  "SelectedNode": "\\src\\components\\DropdownMenu",
+  "SelectedNode": "\\src\\layouts\\header\\MainMenu.js",
   "PreviewInSolutionExplorer": false
 }

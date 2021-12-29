@@ -1,11 +1,6 @@
 ﻿export const Menus = [
     {
         id: 1,
-        name: 'Главная',
-        link: '/',
-        location: ''
-    }, {
-        id: 2,
         name: 'ДЗ1 - компоненты',
         link: '/shop',
         location: 'shop',
@@ -20,7 +15,7 @@
                 location: 'calendar'
             }],
     }, {
-        id: 3,
+        id: 2,
         name: 'ДЗ2 - События и состояния',
         link: '/portfolio',
         location: 'portfolio',
@@ -39,7 +34,7 @@
                 location: 'dropdown'
             }]
     }, {
-        id: 4,
+        id: 3,
         name: 'ДЗ3 - Props',
         link: '/stars',
         location: 'stars',
@@ -56,6 +51,25 @@
                 name: '3.3* - История сообщений',
                 link: '/chat',
                 location: 'chat'
+            }]
+    }, {
+        id: 4,
+        name: 'ДЗ4 - Формы',
+        link: '/colors',
+        location: 'colors',
+        submenu: [
+            {
+                name: '4.1 - Конвертор цвета',
+                link: '/colors',
+                location: 'colors'
+            }, {
+                name: '4.2 - Учет тренировок',
+                link: '/training',
+                location: 'training'
+            }, {
+                name: '4.3* - Менеджер фото',
+                link: '/photos',
+                location: 'photos'
             }]
     }
 ];

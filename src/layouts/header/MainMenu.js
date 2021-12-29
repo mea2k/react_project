@@ -14,7 +14,7 @@ const MainMenu = ({ menu }) => {
     return (
         <div>
             <div className="logo">
-                <span className="text-red">МЕНЮ</span>
+                <NavLink to="/"><span className="text-red">МЕНЮ</span></NavLink>
             </div>
             <nav className="navbar">
                 <ul className="navbar-topmenu">

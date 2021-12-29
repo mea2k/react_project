@@ -1,0 +1,67 @@
+﻿
+.training-container {
+    margin: 20px 10px 20px 10px;
+    height: 200px;
+    width: 600px;
+}
+
+.training-form {
+    margin: 15px 5px 15px 20px;
+    display: flex;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+    .training-form input, button {
+        width: 150px;
+        border-radius: 5px;
+        line-height: 20px;
+    }
+
+    .training-form div:last-child {
+        float: left;
+        margin-bottom: 2px;
+    }
+
+    .training-form .training-form-block {
+        float: left;
+        margin-right: 20px;
+    }
+
+        .training-form .training-form-block label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .training-form .training-form-block .training-form-button {
+            align-items: flex-end;
+        }
+
+
+.training-table {
+    margin: 15px 5px 15px 20px;
+    display: block;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: center;
+}
+
+    .training-table th {
+        width: 150px;
+        line-height: 20px;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .training-table tbody {
+        box-shadow: 0 0 0 1px black;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .training-table tr td {
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }

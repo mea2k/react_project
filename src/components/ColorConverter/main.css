@@ -1,0 +1,41 @@
+﻿
+.color-converter {
+    margin: 20px 10px 20px 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.color-form {
+    display: inline;
+    align-items: center;
+}
+
+.color-form .color-input {
+    width: 170px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.color-box {
+    background: rgba(210, 121, 166, 0.5);
+    border: 1px solid black;
+    margin-top: 15px;
+    width: 175px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    filter: invert(35%);
+}
+

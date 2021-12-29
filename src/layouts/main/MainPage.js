@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Calendar from '../../components/Calendar';
+import ColorConverter from '../../components/ColorConverter';
 import DropdownMenu from '../../components/DropdownMenu';
 import Home from '../../components/Home';
 import ListingLayout from '../../components/Listing';
@@ -8,6 +9,7 @@ import Portfolio from '../../components/Portfolio';
 import ShopItem from '../../components/ShopItem';
 import StarsLayout from '../../components/Stars';
 import Store from '../../components/Store';
+import Training from '../../components/Training';
 
 
 const MainPage = () => (
@@ -26,7 +28,10 @@ const MainPage = () => (
             <Route path='/stars' element={<StarsLayout />} />
             <Route path='/listing' element={<ListingLayout />} />
             <Route path='/chat' element={<MessageHistoryLayout />} />
-        </Routes>
+            {/* ДЗ4 - Формы */}
+            <Route path='/colors' element={<ColorConverter />} />
+            <Route path='/training' element={<Training />} />
+     </Routes>
     </div>
 );
 
