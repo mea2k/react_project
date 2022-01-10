@@ -89,5 +89,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 [http://localhost:3000/training](http://localhost:3000/training)
 
 ### 4.3* - Менеджер фото
-TODO soon...
+Компоненты:
+/src/components/Photo (Photo, PhotoInputForm, PhotoPreviewBlock, PhotoPreview)
+
+Путь:
+[http://localhost:3000/photos](http://localhost:3000/photos)
+
 

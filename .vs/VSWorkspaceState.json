@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\ColorConverter",
-    "\\src\\components\\Listing",
-    "\\src\\components\\Store",
+    "\\src\\components\\public\\DelIcon",
+    "\\src\\components\\public\\EditIcon",
     "\\src\\components\\Training",
     "\\src\\layouts",
     "\\src\\layouts\\header",
     "\\src\\layouts\\main"
   ],
-  "SelectedNode": "\\src\\layouts\\header\\MainMenu.js",
+  "SelectedNode": "\\src\\components\\Training\\index.js",
   "PreviewInSolutionExplorer": false
 }

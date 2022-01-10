@@ -5,6 +5,7 @@ import DropdownMenu from '../../components/DropdownMenu';
 import Home from '../../components/Home';
 import ListingLayout from '../../components/Listing';
 import MessageHistoryLayout from '../../components/MessageHistory';
+import Photo from '../../components/Photo';
 import Portfolio from '../../components/Portfolio';
 import ShopItem from '../../components/ShopItem';
 import StarsLayout from '../../components/Stars';
@@ -31,6 +32,7 @@ const MainPage = () => (
             {/* ДЗ4 - Формы */}
             <Route path='/colors' element={<ColorConverter />} />
             <Route path='/training' element={<Training />} />
+            <Route path='/photos' element={<Photo />} />
      </Routes>
     </div>
 );
