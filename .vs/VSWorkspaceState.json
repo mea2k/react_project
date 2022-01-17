@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\ColorConverter",
-    "\\src\\components\\public\\DelIcon",
-    "\\src\\components\\public\\EditIcon",
-    "\\src\\components\\Training",
+    "\\src\\components\\Photo",
+    "\\src\\components\\ShopItem",
+    "\\src\\components\\Store",
     "\\src\\layouts",
     "\\src\\layouts\\header",
     "\\src\\layouts\\main"
   ],
-  "SelectedNode": "\\src\\components\\Training\\index.js",
+  "SelectedNode": "\\src\\components\\Photo\\PhotoInputForm.js",
   "PreviewInSolutionExplorer": false
 }

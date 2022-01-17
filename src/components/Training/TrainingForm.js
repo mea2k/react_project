@@ -24,7 +24,7 @@ const TrainingForm = ({ date, distance, handleSubmit, handleChange }) => {
         <form className="training-form">
             <div className="training-form-block">
                 <label htmlFor="date">Дата (дд.мм.гг)</label>
-                <input type="text" name="date" value={date} maxLength={8} onChange={onChange} />
+                <input type="date" name="date" value={date} maxLength={8} onChange={onChange} />
             </div>
 
             <div className="training-form-block">
@@ -33,7 +33,7 @@ const TrainingForm = ({ date, distance, handleSubmit, handleChange }) => {
             </div>
 
             <div className="training-form-block ">
-                <input type="submit" className="training-form-button" onClick={handleClick} />
+                <input type="submit" className="training-form-button" value="Добавить" onClick={handleClick} />
             </div>
         </form>
     )
